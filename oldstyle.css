@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: seagreen;
+}
+
+.wrapper {
+  width: 420px;
+  background: purple;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+}
+.input-field i {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+}
+button {
+  width: 20%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+.reg-form h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 150px;
+}
+.reg-form {
+  width: 520px;
+  background: purple;
+  color: #fff;
+  padding: 130px;
+  border-radius: 10px;
+}

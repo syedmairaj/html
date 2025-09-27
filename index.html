@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/message_logo.png"/>
+        <span class="brand-text-logo">Message</span>
+      </div>
+      <div class="nav-links">
+        <button id="login-btn" class="nav-btn">Login</button>
+        <button id="signup-btn" class="nav-btn">Signup</button>
+      </div>
+    </nav>
+    <!-- Banner / Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Reach Your Clients Instantly</h1>
+        <p><span>
+          Message</span> helps businesses connect with their clients through fast,
+          secure, and easy messaging across SMS, WhatsApp, Email, Instagram, and
+          Facebook Ads.
+        </p>
+      </div>
+      <div class="hero-image">
+        <!-- <img
+          src="https://img.freepik.com/free-vector/marketing-mobile-phone-with-apps-icons_23-2148420145.jpg"
+        />
+      </div> -->
+    </section>
+    <!-- Form Modal -->
+    <div class="form-modal" id="form-modal">
+      <div class="form-container">
+        
+        <!-- login form -->
+        <form id="login-form" class="active">
+          <!-- logo -->
+           <div class="form-header">
+           <div class="form-logo">
+            
+            <img src="./images/message_logo.png" alt="logo"/>
+            <span class="brand-text">Message</span>
+           </div>
+           </div>
+          <h2>Login</h2>
+          
+          <div class="input-group">
+            <i class="ri-user-fill"></i>
+            <input type="text" id="login-email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <i class="ri-lock-line"></i>
+            <input type="password" id="login-password" placeholder="Password" required />
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <p>
+            Dont have an account? <a href="#" id="show-register">Register</a>
+          </p>
+        </form>
+        <!-- Registration Form -->
+        <form id="register-form">
+          <!-- logo -->
+           <div class="form-header"></div>
+            <div class="form-logo">
+            <img src="./images/message_logo.png" alt="logo"/>
+             <span class="brand-text">Message</span>
+          <h2>Sign Up</h2>
+          <div class="input-group">
+            <i class="ri-user-fill"></i>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username" required />
+          </div>
+          <div class="input-group">
+            <i class="ri-mail-fill"></i>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <i class="ri-lock-fill"></i>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+        x
+            </div>
+          <button type="submit" class="btn">Register</button>
+        </form>
+        
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

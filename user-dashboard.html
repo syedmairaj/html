@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-Dashboard</title>
+    <link rel="stylesheet" href="./css/userdashboard.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li onclick="showSection('sms')">SMS</li>
+        <li onclick="showSection('email')">Email</li>
+      </ul>
+      <button id="logout-Btn">Logout</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- SMS Form -->
+      <div id="sms" class="form-section">
+        <h2>Send SMS</h2>
+        <form id="smsForm">
+          <input
+            type="text"
+            id="smsFrom"
+            placeholder="From (Your Twilio Number)"
+            required
+          />
+          <input
+            type="text"
+            id="smsTo"
+            placeholder="To (Recipient Phone Number)"
+            required
+          />
+          <textarea
+            id="smsMessage"
+            placeholder="Message"
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit">Send SMS</button>
+        </form>
+      </div>
+      <!-- Email Form -->
+      <div id="email" class="form-section">
+        <h2>Send Email</h2>
+        <form id="emailForm">
+          <input type="email" id="emailTo" placeholder="To" required />
+          <input type="text" id="emailSubject" placeholder="Subject" required />
+          <textarea
+            id="emailBody"
+            placeholder="Body"
+            rows="5"
+            required
+          ></textarea>
+          <input type="file" id="emailAttachment" />
+          <button type="submit">Send Email</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/logout.js"></script>
+    <script src="./js/user.js"></script>
+    <script>
+      checkAccess("USER_ROLE");
+    </script>
+  </body>
+</html>

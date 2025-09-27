@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebar ul li:hover {
+  background: #34495e;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Forms */
+.form-section {
+  display: none;
+}
+.form-section.active {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #2980b9;
+}
+.form-section {
+  display: none;
+}
+.form-section.active {
+  display: block;
+}
+
+/* Highlight active menu item */
+.sidebar ul li.active-menu {
+  background: #1abc9c;
+}
