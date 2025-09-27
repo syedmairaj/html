@@ -56,7 +56,7 @@ registerForm.addEventListener("submit", (e) => {
   };
   console.log("Submitting:", userData);
 
-  fetch("http://localhost:9090/api/v1/message/register", {
+  fetch("http://172.31.15.145:9090/api/v1/message/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -94,7 +94,7 @@ loginForm.addEventListener("submit", (e) => {
 
   console.log("Sending login data:", loginData);
 
-  fetch("http://localhost:9090/api/v1/message/login", {
+  fetch("http://172.31.15.145:9090/api/v1/message/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
